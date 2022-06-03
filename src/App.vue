@@ -47,8 +47,8 @@ const snapshot = () => {
   const ctx = canvas.getContext("2d");
   ctx.drawImage(videoRef.value, 0, 0, 200, 200);
   const data = canvas.toDataURL("image/png");
-  imgRef.value.setAttribute("src", data);
   isStreaming.value = false;
+  imgRef.value.setAttribute("src", data);
 };
 </script>
 
