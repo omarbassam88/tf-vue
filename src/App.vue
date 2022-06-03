@@ -60,7 +60,7 @@ const snapshot = () => {
         <h1 class="text-3xl font-bold">TensorFlow Object Detector</h1>
         <!-- Camera Controls -->
         <div class="flex justify-center">
-            <button @click="isStreaming ? stopStreaming : openCamera"
+            <button @click="() => { isStreaming ? stopStreaming() : openCamera() }"
                 class="btn text-white w-32 mx-1 my-4 bg-gradient-to-r from-blue-800 to-indigo-800">
                 {{ isStreaming ? "Close Camera" : "Open Camera" }}
             </button>
